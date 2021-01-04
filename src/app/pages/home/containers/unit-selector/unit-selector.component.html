@@ -1,0 +1,22 @@
+<span class="navbar-text">
+  <span class="mr-2">
+    <fa-icon [icon]="faThermometerEmpty"></fa-icon>
+  </span>
+  <button
+    class="btn mr-2"
+    type="button"
+    [ngClass]="unit === unitsEnum.Metric ? 'btn-dark' : 'btn-outline-dark'"
+    (click)="updateUnit(unitsEnum.Metric)">˚C</button>
+
+  <button
+    class="btn mr-2"
+    type="button"
+    [ngClass]="unit === unitsEnum.Imperial ? 'btn-dark' : 'btn-outline-dark'"
+    (click)="updateUnit(unitsEnum.Imperial)">˚F</button>
+
+  <button
+    class="btn mr-2"
+    type="button"
+    [ngClass]="unit === unitsEnum.SI ? 'btn-dark' : 'btn-outline-dark'"
+    (click)="updateUnit(unitsEnum.SI)">K</button>
+</span>
